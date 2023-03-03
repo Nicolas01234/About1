@@ -1,0 +1,102 @@
+<?php include './Components/header.php'  ?>
+
+    <link rel="stylesheet" href="about.css">
+
+    <h4 id="top"></h4>
+
+    <!-- div -->
+    <div>
+            <br><br><br><br>
+
+        <h1 class="Aboutpage1">
+            ABOUT PAGE
+        </h1>
+
+            <br><br><br>
+
+        <h2 class="Who_am_I">
+            --Who am I?
+        </h2>
+    </div>
+
+            <br><br>
+
+        <!-- div -->
+    <div class="About_Image1_Text1_Div">  
+
+        <img 
+            class="First_About_Image" 
+            src="/images/about/Nics_back_turned_while_coding_c760cd61-339c-4f2c-b7cf-1083bdcc8e8f.png" 
+            alt=""
+        >
+
+
+        <h3 class="First_About_Text">I am currently a student at the Arab Open University, and I am looking to pursue a career in "webDev" , "blockChainDev" or "SoftwareDev". I have always been interested in computers and how they work, and I have been working on developing my skills in this area for some time now. I am confident in my ability to create beginner websites that are both aesthetically pleasing and functional, and I am eager to put my skills to use in a professional setting.
+
+            <br><br><br><br>
+        
+        In my spare time, I enjoy spending time with my family and friends, playing video games, and reading. I am also a big fan of music, and I enjoy going to concerts and festivals whenever I can. I am a well-rounded individual with a strong work ethic, and I am confident that I will be a valuable asset to any team.</h3>
+
+    </div>
+            <br><br>
+
+    <div class="About_Image2_Text2_Div">
+
+        <img 
+
+        class="Second_About_Image"
+
+        src="/images/about/Nics_technology_and_Ai_48666f30-51a2-4477-8ae3-7f438856a569.png" 
+
+        alt="" 
+        >
+
+        <h2 class="Second_About_Title_01">--What would I like to do in the future?</h2>
+
+        <h3 class="Second_About_Text_01">I would like to work as a software engineer or a web developer. Furthermore, I would also like to continue my education and get a master's degree in computer science. I want to work in a field that is constantly evolving and changing, and that is why I chose computer science as my major. I am excited to see what the future holds for me as a computer science major.</h3>
+
+        <h2 class="Second_About_Title_02">--What made Me pursue Computer Science?</h2>
+
+        <h3 class="Second_About_Text_02">When I was younger, I was always interested in computers and how they worked. Likewise, I would take apart my family's computer and try to put it back together, but I could never quite figure it out. This made me want to learn more about computers and eventually led me to pursue a degree in computer science. I'm constantly learning new things and challenging myself to solve complex problems. I'm grateful that I chose to pursue a career in computer science, and I would encourage anyone who is interested in computers to do the same.</h3>
+
+        <br><br><br><br>
+
+    </div>
+
+    <div id="ID_For_Third_About_Title">
+        <h2 id="Third_About_Title">--If you were a beginner in computer science, what would you recommend?</h2>
+    </div>
+
+    
+    
+    <div class="About_Image3_Text3_Div">
+
+        <img class="Third_About_Image" src="/images/about/Nics_world_of_technology_921a6047-ef5f-4df4-afcc-146b37ccb4b5.png" alt="">
+
+        <h3 class="Third_About_Text">There are a few things that I recommend to beginners in computer science. The first is to find a good mentor. A mentor can help guide you through the early stages of learning computer science and can introduce you to concepts that you may not be familiar with. The second is to find a good online resource. There are a lot of free resources available online, and finding a few that you like can help you learn at your own pace. The third is to get involved in the community. There are a lot of great people in the computer science community, and getting involved can help you learn and make connections that can be beneficial in your career.</h3>
+
+    </div>
+
+    <div id="ID_For_Fourth_About_Title">
+
+        <h2 class="Fourth_About_Title">--As a computer science student, what was the one thing you regretted? </h2>
+
+    </div>
+
+    <div>
+
+        <h3 class="Fourth_About_Text">I regret not learning computer science sooner. I was always interested in computers and how they work, but I never took the time to learn about coding and computer science. I wish I had started sooner, so that I would be further along in my career by now.</h3>
+
+    </div>
+    <br><br><br><br><br><br><br>
+
+
+    <a 
+    href="#top">
+    <img src="/AboutPage/Images_About/icons8-slide-up-48.png" 
+    alt="" 
+    class="scrollToTop"></a>
+        
+    <?php include './Components/footer.php'  ?>
+
+
