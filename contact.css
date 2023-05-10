@@ -1,0 +1,385 @@
+/* '#' For ID */
+/* '.' For Class */
+/* Body and NavBar ------>Start */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Google Sans Regular";
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(32, 32, 32);
+}
+
+header{
+    width: 100%;
+    height: 50px;
+    background-color: #a200ff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.hamburger{
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+    color: black;
+    background-color: #ddd;
+    border-radius: 12px;
+}
+  /* Media start */
+@media only screen and (max-width: 1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+  /* Media Continue */
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
+    }
+}
+  /* Media Continue */
+@media only screen and (max-width: 900px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+    }
+
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: rgb(49, 47, 47);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 300px;
+    }
+    
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a{
+    margin-bottom: 12px;
+    }
+}
+  /* Media end */
+  /* end<------ */
+
+.Contact_Top_Image{
+    width:200px;
+    height:180px;
+    display: block;
+    margin: 70px auto;
+}
+
+.Contact_Title{
+    color: blueviolet;
+    text-align: center;
+    padding: -100px;
+    border: 2px solid  rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
+
+.Loading1{
+    width: 50px;
+    height: 30px;
+    margin: 70px auto;
+    background: red;
+    position: relative;
+    animation: mymove2 1s infinite;
+}
+.Loading1:hover{
+    animation-play-state: paused;
+}
+@keyframes mymove2 {
+    100%  {transform: translate(0px, 0px) rotate(360deg); background: rgb(68, 0, 255);}
+    }    
+
+.Contact_Layer1{
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 70px auto;
+        
+        
+    }
+.Contact_Layer2{
+    background-color: rgb(0, 0, 0);
+    border-radius: 12px;
+    border: 2px solid  rgb(255, 255, 255) ;
+    width: 98%;
+    height: 98%;
+    display: block;
+    margin: 0px auto;
+}
+
+.Contact_Gmail_Layer1{
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 2px solid  rgb(255, 255, 255);
+    color: white; 
+    padding : 10px;
+    margin : 0;
+}
+.Contact_Gmail_Layer2{
+    display: flex;
+    border: 2px solid  rgb(255, 255, 255) ;
+}
+
+.Contact_Mail_Image{
+    height: 60px;
+}
+.Gmail{
+    color: white;
+    padding: 6px;
+}
+
+.Contact_Location1{
+    color: rgb(255, 255, 255); 
+    background-color: black;
+    border: 2px solid  rgb(255, 255, 255) ;
+    color: white; 
+    padding : 10px;
+    margin : 0   
+}
+
+.Contact_Location2{
+    display: flex;
+    color: white;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 2px solid  rgb(255, 255, 255) ;
+}
+
+.Contact_Location_Image{
+    height: 60px;
+}
+.Location{
+    color: white;
+    padding: 6px;
+}
+
+.Contact_Phone1{
+    color: rgb(255, 255, 255); 
+    background-color: black;
+    border: 2px solid  rgb(255, 255, 255) ;
+    color: white; 
+    padding : 10px;
+    margin : 0   
+}
+
+.Contact_Phone2{
+    display: flex;
+    color: white;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 2px solid  rgb(255, 255, 255) ;
+}
+
+.Contact_Phone_Image{
+    height: 60px;
+    
+}
+.Phone{
+    color: white;
+    padding: 6px;
+}
+
+.Contact_Name1{
+    color: rgb(255, 255, 255); 
+    background-color: black;
+    border: 2px solid  rgb(255, 255, 255) ;
+    color: white; 
+    padding : 10px;
+    margin : 0   
+}
+
+.Contact_Name2{
+    color: white;
+    display: flex;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border: 2px solid  rgb(255, 255, 255) ;
+}
+
+.Contact_Name_Image{
+    height: 60px;
+}
+.Name{
+    color: white;
+    padding: 6px;
+}
+
+/* Media start */
+@media screen and (width < 1000px) {
+    .Contact_Layer1{
+        width: 700px;
+        height: 440px;
+    }
+
+    .Contact_Gmail_Layer1{font-size: 20px;}
+    .Contact_Mail_Image{height: 50px;}
+    .Gmail{font-size: 20px;}
+
+    .Contact_Location1{font-size: 20px;}
+    .Contact_Location_Image{height: 50px;}
+    .Location{font-size: 20px;}
+
+    .Contact_Phone1{font-size: 20px;}
+    .Contact_Phone_Image{height: 50px;}
+    .Phone{font-size: 20px;}
+
+    .Contact_Name1{font-size: 20px;}
+    .Contact_Name_Image{height: 50px;}
+    .Name{font-size: 20px;}
+
+}
+/* Media Continue */
+@media screen and (width < 700px) {
+    .Contact_Layer1{
+        width: 600px;
+        height: 400px;
+    }
+    .Contact_Mail_Image{height: 40px;}
+    .Contact_Location_Image{height: 40px;}
+    .Contact_Phone_Image{height: 40px;}
+    .Contact_Name_Image{height: 40px;}
+}
+/* Media Continue */
+@media screen and (width < 600px) {
+    .Contact_Layer1{
+        width: 500px;
+        height: 380px;
+    }
+    
+    .Contact_Mail_Image{height: 30px;}
+    .Contact_Location_Image{height: 30px;}
+    .Contact_Phone_Image{height: 30px;}
+    .Contact_Name_Image{height: 30px;}
+}
+/* Media Continue */
+@media screen and (width < 500px) {
+    .Contact_Layer1{
+        width: 400px;
+        height: 380px;
+    }
+    .Contact_Mail_Image{height:30px;}
+    .Contact_Location_Image{height: 30px;}
+    .Contact_Phone_Image{height: 30px;}
+    .Contact_Name_Image{height: 30px;}
+}
+/* Media Continue */
+@media screen and (width < 400px) {
+    .Contact_Layer1{
+        width: 300px;
+        height: 280px;
+    }
+
+    .Contact_Gmail_Layer1{padding : 5px;font-size: 12px;}
+    .Gmail{font-size: 12px;}
+
+    .Contact_Location1{padding : 5px;font-size: 12px;}
+    .Location{font-size: 12px;}
+
+    .Contact_Phone1{padding : 5px;font-size: 12px;}
+    .Phone{font-size: 12px;}
+
+    .Contact_Name1{padding : 5px;font-size: 12px;}
+    .Name{font-size: 12px;}
+
+}
+/* Media Continue */
+@media screen and (width < 300px) {
+    .Contact_Layer1{
+        width: 200px;
+        height: 195px;
+    }
+    .Contact_Gmail_Layer1{padding : 5px;font-size: 6px;}
+    .Contact_Mail_Image{height:20px;}
+    .Gmail{font-size: 6px;}
+
+    .Contact_Location1{padding : 5px;font-size: 6px;}
+    .Contact_Location_Image{height:20px;}
+    .Location{font-size: 6px;}
+
+    .Contact_Phone1{padding : 5px;font-size: 6px;}
+    .Contact_Phone_Image{height:20px;}
+    .Phone{font-size: 6px;}
+
+    .Contact_Name1{padding : 5px;font-size: 6px;}
+    .Contact_Name_Image{height:20px;}
+    .Name{font-size: 6px;}
+}
+/* Media end */
+
+.scrollToTop {
+    position: relative;
+    float: right;
+    top:-50px;
+} 
+
+.Bottom_Nav_Bar{
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    padding: .5rem;
+}
+
+#button1{
+    background-color: rgb(105, 12, 160);
+    color: white;
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 5px;   
+}

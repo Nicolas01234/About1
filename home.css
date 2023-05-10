@@ -1,0 +1,252 @@
+/* '#' For ID */
+/* '.' For Class */
+/* Body and NavBar ------>Start */
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Google Sans Regular";
+  box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(32, 32, 32);
+  }
+
+header{
+  width: 100%;
+  height: 50px;
+  background-color: #a200ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.logo{
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.hamburger{
+  display: none;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+  color: black;
+  background-color: #ddd;
+  border-radius: 12px;
+}
+/* Media start */
+@media only screen and (max-width: 1320px){
+  header{
+    padding: 0 50px;
+  }
+}
+/* Media Continue */
+@media only screen and (max-width: 1100px){
+  header{
+    padding: 0 30px;
+  }
+}
+/* Media Continue */
+@media only screen and (max-width: 900px){
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .line{
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 6px 0;
+  }
+
+  .nav-bar{
+    height: 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    z-index: 999;
+    background-color: rgb(49, 47, 47);
+    transition: 0.5s;
+    overflow: hidden;
+  }
+
+  .nav-bar.active {
+    height: 300px;
+  }
+  
+  .nav-bar ul{
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+
+  .nav-bar ul li a{
+    margin-bottom: 12px;
+  }
+}
+/* Media end */
+/* end<------ */
+
+.background-image-text > img{
+
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  
+}
+
+.background-image-text > div.backgroud-text{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  color: white;
+  text-align: center;
+  font-size: 50px;
+  font-weight: bold;
+  z-index: 1;
+  text-shadow: 0 0 10px black;
+}
+
+@media only screen and (max-width: 900px){
+  .background-image-text > div.backgroud-text{
+    font-size: 30px;
+  }
+}
+
+.Desktop_Color_Text_I {
+  position: absolute;
+  left: 50%;
+  top: 57%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  zoom:"reset";
+}
+
+#text-animation::before {
+  content: "Create";
+  animation: animate infinite 4s;
+  padding-left: 10px;
+}
+
+@keyframes animate {
+  25% {
+    content: "Create";
+    color: darkmagenta;
+  }
+
+  50% {
+    content: "Design";
+    color: rgb(255, 27, 236);
+  }
+
+  100% {
+    content: "Dream";
+    color: rgb(255, 0, 0);
+  }
+}
+
+/* Makes a Node disappear  */
+.hidden {
+  display: none;
+} /*<-->*/
+
+/* Bottom Images */
+.Home_Page_TextBox1 {
+  background-color: rgb(0, 0, 0);
+  padding: 50px;
+  border: 5px solid rgb(32, 32, 32);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+.Home_Page_Think_Image{
+  left: 100px; 
+  width: 300px;
+  height: 500px; 
+  border: 2px solid rgb(255, 255, 255) ;
+}
+
+.Home_Page_Lebanon_Image{
+  clear:right;
+  width: 300px;
+  height: 500px;
+  border: 2px solid  rgb(255, 255, 255) ;
+}
+
+@media screen and (max-width: 1030px) {
+  .Home_Page_Think_Image{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .Home_Page_Lebanon_Image{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .Home_Page_TextBox1{
+    display: block;
+  }
+}
+
+.scrollToTop {
+  position: relative;
+  float: right;
+  top:-50px;
+} 
+
+.Bottom_Nav_Bar{
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  padding: .5rem;
+}
+
+#button1{
+  background-color: rgb(105, 12, 160);
+  color: white;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 5px;   
+}
+

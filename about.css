@@ -1,0 +1,515 @@
+/* '#' For ID */
+/* '.' For Class */
+/* Body and NavBar ------>Start */
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Google Sans Regular";
+  box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(32, 32, 32);
+  }
+
+header{
+  width: 100%;
+  height: 50px;
+  background-color: #a200ff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 100px;
+}
+
+.logo{
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.hamburger{
+  display: none;
+}
+
+.nav-bar ul {
+  display: flex;
+}
+
+.nav-bar ul li a {
+  display: block;
+  color: white;
+  font-size: 20px;
+  padding: 10px 25px;
+  border-radius: 50px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+
+.nav-bar ul li a:hover {
+  color: black;
+  background-color: #ddd;
+  border-radius: 12px;
+}
+/* Media start */
+@media only screen and (max-width: 1320px){
+  header{
+    padding: 0 50px;
+  }
+}
+/* Media Continue */
+@media only screen and (max-width: 1100px){
+  header{
+    padding: 0 30px;
+  }
+}
+/* Media Continue */
+@media only screen and (max-width: 900px){
+  .hamburger{
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger .line{
+    width: 30px;
+    height: 3px;
+    background: white;
+    margin: 6px 0;
+  }
+
+  .nav-bar{
+    height: 0;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    z-index: 999;
+    background-color: rgb(49, 47, 47);
+    transition: 0.5s;
+    overflow: hidden;
+  }
+
+  .nav-bar.active {
+    height: 300px;
+  }
+  
+  .nav-bar ul{
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.5s;
+    opacity: 0;
+  }
+
+  .nav-bar.active ul {
+    opacity: 1;
+  }
+
+  .nav-bar ul li a{
+    margin-bottom: 12px;
+  }
+}
+/* Media end */
+/* end<------ */
+
+/* About_Page */
+/* First Images and Text -->Start */
+.Aboutpage1{
+  color:blueviolet; text-align: center;
+  border: 2px solid  rgb(0, 0, 0);
+  background-color: rgb(0, 0, 0);
+}
+
+.Who_am_I{
+  color: white;
+  border: 2px solid  rgb(0, 0, 0);
+  background-color: black;
+  padding: 5px;
+}
+
+.About_Image1_Text1_Div{
+  padding: 10px;
+  background-color: black;
+}
+
+.First_About_Image{
+  border: 2px solid  rgb(255, 255, 255) ;
+}
+
+.First_About_Text{
+  color: white;
+  padding: 50px;
+  border: 2px solid  rgb(255, 255, 255);
+}
+
+/* Media start */
+@media screen and (width > 2000px) {
+  .About_Image1_Text1_Div{
+    display: flex;
+  }
+  .First_About_Image{
+    width: 100%;
+    height: 100%;
+  }
+  .First_About_Text{
+    font-size: 22px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 2000px) {
+  .About_Image1_Text1_Div{
+    display: flex;
+  }
+  .First_About_Image{
+    width: 504px;
+    height: 504px;
+  }
+  .First_About_Text{
+    font-size: 22px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 1200px) {
+  .About_Image1_Text1_Div{
+    display: flex;
+  }
+  .First_About_Image{
+    width: 500px;
+    height: 500px;
+  }
+  .First_About_Text{
+    font-size: 19px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 1000px) {
+  .First_About_Image{
+    width: 100%;
+    height: 80%;
+  }
+  .About_Image1_Text1_Div{
+    display: block;
+  }
+  .First_About_Text{
+    font-size: 19px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 500px) {
+  .First_About_Image{
+    width: 100%;
+    height: 80%;
+  }
+  .First_About_Text{
+    padding: 13px;
+    font-size: 19px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 300px) {
+  .First_About_Text{
+    font-size: 12px;
+    padding: 19px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 250px) {
+  .First_About_Image{
+    width: 100%;
+    height: 80%;
+  }
+  .First_About_Text{
+    padding: 10px;
+    font-size: 19px;
+  }
+}
+/* Media end */
+/* <----- */
+
+/* Second Images and Text -->Start */
+.About_Image2_Text2_Div{
+  padding: 13px;
+  background-color: black;
+}
+.Second_About_Image{
+  width: 504px;
+  height: 504px;
+  float: right;
+  border: 2px solid  rgb(255, 255, 255);
+}
+
+.Second_About_Title_01{
+  border: 2px solid  rgb(0, 0, 0);
+  color: white;
+  background-color: rgb(0, 0, 0);
+}
+
+.Second_About_Title_02{
+  border: 2px solid  rgb(0, 0, 0);
+  color: white;
+  background-color: black;
+}
+
+.Second_About_Text_01{
+  color: white;
+  padding: 50px;
+  background-color: black;
+  border: 2px solid  rgb(255, 255, 255);
+}
+
+.Second_About_Title_02{
+  color: white; 
+  padding: 10px;
+  background-color: black; 
+}
+.Second_About_Text_02{
+  color: white; 
+  padding: 50px;
+  background-color: black; 
+  border: 2px solid  rgb(255, 255, 255);
+}
+
+/* Media Start */
+@media screen and (width > 1800px) {
+  .Second_About_Image{
+    float: right;
+  }
+  .Second_About_Text_01{
+    font-size: 22px;
+  }
+  .Second_About_Text_02{
+    font-size: 22px;
+  }
+}
+
+/* Media Continue */
+@media screen and (width < 1800px) {
+  .Second_About_Image{
+    width: 400px;
+    height: 400px;
+    float: right;
+  }
+  .Second_About_Text_01{
+    font-size: 19px;
+  }
+  .Second_About_Text_02{
+    font-size: 19px;
+  }
+}
+
+/* Media Continue */
+@media screen and (width < 910px) {
+  .Second_About_Image{
+    width: 100%;
+    height: 100%;
+    float: none;
+  }
+  .Second_About_Text_01{
+    font-size: 19px;
+  }
+  .Second_About_Text_02{
+    font-size: 19px;
+  }
+}
+/* Media end */
+
+/* Third Images and Text -->Start */
+#ID_For_Third_About_Title{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#Third_About_Title{
+  color: white;
+  padding: 10px;
+  background-color: black;
+}
+
+.About_Image3_Text3_Div{
+  padding: 13px;
+  background-color: black;
+}
+
+.Third_About_Image{
+  width: 500px;
+  height: 500px;
+  border: 2px solid  rgb(255, 255, 255) ;
+}
+
+.Third_About_Text{
+  color: white; 
+  padding: 50px; 
+  border: 2px solid  rgb(255, 255, 255);
+}
+
+/* Media Start */
+@media screen and (width > 2000px) {
+  .About_Image3_Text3_Div{
+    display: flex;
+  }
+  .Third_About_Image{
+    width: 504px;
+    height: 504px;
+  }
+  .Third_About_Text{
+    font-size: 22px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 2000px) {
+  .About_Image3_Text3_Div{
+    display: flex;
+  }
+  .Third_About_Image{
+    width: 504px;
+    height: 504px;
+  }
+  .Third_About_Text{
+    font-size: 22px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 1200px) {
+  .About_Image3_Text3_Div{
+    display: flex;
+  }
+  .Third_About_Image{
+    width: 500px;
+    height: 500px;
+  }
+  .Third_About_Text{
+    font-size: 19px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 1000px) {
+  .Third_About_Image{
+    width: 100%;
+    height: 80%;
+  }
+  .About_Image3_Text3_Div{
+    display: block;
+  }
+  .Third_About_Text{
+    font-size: 19px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 500px) {
+  .Third_About_Image{
+    width: 100%;
+    height: 80%;
+  }
+  .Third_About_Text{
+    padding: 13px;
+    font-size: 19px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 300px) {
+  .Third_About_Text{
+    font-size: 12px;
+    padding: 19px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 250px) {
+  .Third_About_Image{
+    width: 100%;
+    height: 80%;
+  }
+  .Third_About_Text{
+    padding: 10px;
+    font-size: 19px;
+  }
+}
+/* Media end */
+
+/* Fourth Text -->Start */
+#ID_For_Fourth_About_Title{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.Fourth_About_Title{
+  padding: 10px;
+  color: white;
+  background-color: black;
+}
+.Fourth_About_Text{
+  color: white;
+  padding: 50px;
+  background-color: black;
+  border: 2px solid  rgb(255, 255, 255);
+}
+@media screen and (width > 2000px) {
+  .Fourth_About_Text{
+    font-size: 22px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 2000px) {
+  .Fourth_About_Text{
+    font-size: 22px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 1200px) {
+  .Fourth_About_Text{
+    font-size: 19px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 1000px) {
+  .Fourth_About_Text{
+    font-size: 19px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 500px) {
+  .Fourth_About_Text{
+    padding: 13px;
+    font-size: 14px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 300px) {
+  .Fourth_About_Text{
+    font-size: 12px;
+    padding: 19px;
+  }
+}
+/* Media Continue */
+@media screen and (width < 250px) {
+  .Fourth_About_Text{
+    padding: 10px;
+    font-size: 19px;
+  }
+}
+/* Media end */
+
+.scrollToTop {
+  position: relative;
+  float: right;
+  top:-50px;
+} 
+
+.Bottom_Nav_Bar{
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  padding: .5rem;
+}
+
+#button1{
+  background-color: rgb(105, 12, 160);
+  color: white;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 5px;   
+}
+
+/* End Of CSS For About Page */
