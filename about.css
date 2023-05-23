@@ -383,8 +383,8 @@ header{
     display: flex;
   }
   .Third_About_Image{
-     height: 100%;
-  width: 100%;
+     height: 500px;
+  width: 500px;
   border: 2px solid  rgb(255, 255, 255) ;
   }
   .Third_About_Text{
@@ -394,8 +394,8 @@ header{
 /* Media Continue */
 @media screen and (width < 1000px) {
   .Third_About_Image{
-     height: 100%;
-  width: 100%;
+     height: 500px;
+  width: 500px;
   border: 2px solid  rgb(255, 255, 255) ;
   }
   .About_Image3_Text3_Div{
