@@ -238,8 +238,8 @@ header{
   background-color: black;
 }
 .Second_About_Image{
-  height: 100%;
-  width: 100%;
+  height: 500px;
+  width: 500px;
   float: right;
   border: 2px solid  rgb(255, 255, 255);
 }
