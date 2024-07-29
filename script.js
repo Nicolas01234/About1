@@ -7,7 +7,7 @@ function setupHamburgerMenu() {
             navBar.classList.toggle('active');
         };
     }
-}
+}  
 
 // Header and footer loading
 function loadComponent(url, elementId, callback) {
