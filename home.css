@@ -209,6 +209,7 @@ header{
 @media only screen and (max-width: 470px) {
   .Home_Page_Grad_Image {
     width: 100%;
+    height: 500px;
   }
 }
 .textAbout{
