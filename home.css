@@ -206,6 +206,11 @@ header{
   height: 550px; 
   border: 2px solid rgb(255, 255, 255) ;
 }
+@media only screen and (max-width: 470px) {
+  .Home_Page_Grad_Image {
+    width: 100%;
+  }
+}
 .textAbout{
   color: white;
   padding: 20px;
